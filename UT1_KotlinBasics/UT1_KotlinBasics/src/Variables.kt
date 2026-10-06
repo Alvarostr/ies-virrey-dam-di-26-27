@@ -54,7 +54,7 @@ fun main(){
     /**
      * Logic operators
      * && AND
-     * !! OR
+     * || OR
      * ! NOT
      */
     val number2:Int = 25
@@ -69,6 +69,8 @@ fun main(){
 
     val isBlocked = false
     val isNotBlocked = !isBlocked
+
+
 
 
 

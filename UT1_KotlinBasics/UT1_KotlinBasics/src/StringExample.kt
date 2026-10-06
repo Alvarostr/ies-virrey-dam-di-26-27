@@ -14,7 +14,7 @@ fun main(){
     println("This is \n an example")
     println("This is an \"example\"")
 
-    val example:String = "3"
+    val example:String = "4"
     val example2:Int = 4
 
     //Casting
