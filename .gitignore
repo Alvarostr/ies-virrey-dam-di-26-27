@@ -1,0 +1,20 @@
+### IntelliJ IDEA ###
+# Compiled output
+out/
+.kotlin/
+# Per-user IDE files (the shared project config in .idea/ IS committed)
+.idea/workspace.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+.idea/dictionaries/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Other IDEs ###
+.vscode/
+.classpath
+.project
+.settings/
+bin/

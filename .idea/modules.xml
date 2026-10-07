@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DI-26-27.iml" filepath="$PROJECT_DIR$/DI-26-27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FigurasGeometricas/FigurasGeometricas.iml" filepath="$PROJECT_DIR$/FigurasGeometricas/FigurasGeometricas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT1_KotlinBasics/UT1_KotlinBasics.iml" filepath="$PROJECT_DIR$/UT1_KotlinBasics/UT1_KotlinBasics.iml" />
     </modules>
   </component>
 </project>

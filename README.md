@@ -21,6 +21,14 @@
 - **07/10/2026**: Module 2. Kotlin
 - 
 
+## 💻 How to open the repository in IntelliJ IDEA
+1. Fork this repository and clone **your fork** (`File → New → Project from Version Control…`).
+2. Open the **root folder** of the repository. Do not open a sub-folder: every unit is a module of one single project.
+3. If IntelliJ asks for an SDK, go to `File → Project Structure → Project → SDK` and select (or download) **JDK 21**. Naming it `21` avoids this step.
+4. Each `main` function shows a green ▶ in the margin. If it does not, check that the file is inside a `src` folder (it must appear in blue).
+
+**Adding a new unit:** create the folder at the root with its own `src`, then `File → New → Module from Existing Sources…` so it is registered in `.idea/modules.xml`, and commit the new `.iml` file.
+
 ## 🧭 Additional repositories. 
 - **Full_Example_CRUD_In_Java**: Full example how to use Interfaces in a profesional project
 - 
