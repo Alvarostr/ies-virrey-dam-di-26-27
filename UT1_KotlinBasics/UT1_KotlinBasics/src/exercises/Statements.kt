@@ -86,3 +86,92 @@ Do not use yet:
 - Classes.
 - Console input.
  */
+/**
+ * EXERCISE THREE
+Month of the Year:
+Write a program that asks the user to enter a number from 1 to 12.
+
+The program must convert that number into the name of the corresponding month.
+
+Examples:
+- If the user enters 1, the program must display "January".
+- If the user enters 5, the program must display "May".
+- If the user enters 12, the program must display "December".
+- If the user enters a number that is not between 1 and 12, it must display "Invalid month".
+
+Concepts you must use:
+- readln()
+- toInt()
+- when
+- else
+ */
+
+/**
+ * EXERCISE FOUR
+Month and Season:
+Write a program that asks the user to enter a number from 1 to 12.
+
+The program must determine:
+- The name of the month.
+- The season that month belongs to.
+
+Rules:
+- 12, 1, and 2 belong to "Winter".
+- 3, 4, and 5 belong to "Spring".
+- 6, 7, and 8 belong to "Summer".
+- 9, 10, and 11 belong to "Autumn".
+
+Examples:
+- If the user enters 1, the program must display "January" and "Winter".
+- If the user enters 4, the program must display "April" and "Spring".
+- If the user enters 8, the program must display "August" and "Summer".
+- If the user enters 10, the program must display "October" and "Autumn".
+- If the user enters a number that is not between 1 and 12, it must display "Invalid month".
+
+Concepts you must use:
+- readln()
+- toInt()
+- if
+- ranges with in
+- when
+- else
+ */
+
+/**
+ * EXERCISE FIVE
+Number Guessing Game:
+Write a program in which the user has to guess a secret number.
+
+Game rules:
+- The secret number is fixed.
+- The user must enter numbers between 1 and 10.
+- The user has a maximum of 3 attempts.
+- If the user enters a number outside the range, an error message must be displayed.
+- A number outside the range must not count as an attempt.
+- If the user guesses correctly, a victory message must be displayed and the game must end.
+- If the user guesses wrong, the program must indicate whether the secret number is higher or lower.
+- If the user runs out of attempts, a defeat message must be displayed.
+
+Example:
+- Secret number: 7
+- Maximum attempts: 3
+- Valid range: 1..10
+
+The program must keep track of:
+- How many attempts the user has used.
+- How many attempts the user has left.
+- Whether the user has won or lost.
+
+Concepts you must use:
+- val
+- var
+- readln()
+- toInt()
+- if
+- else if
+- else
+- ranges with in or !in
+- while
+- break
+- continue
+ */
