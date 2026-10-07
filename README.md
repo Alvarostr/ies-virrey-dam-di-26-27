@@ -16,9 +16,12 @@
 - **Assessment**: rubrics per Learning Outcome (RA), code quality, documentation, and oral defence.
 
 ## 🧭 Repository's additions. 
-- **21/09/2026**: First solution for the exercise Geometric Shapes. 
+- **21/09/2026**: First solution for the exercise Geometric Shapes.
+- **05/10/2026**: Module 1. Kotlin
+- **07/10/2026**: Module 2. Kotlin
 - 
 
 ## 🧭 Additional repositories. 
+- **Full_Example_CRUD_In_Java**: Full example how to use Interfaces in a profesional project
 - 
 
