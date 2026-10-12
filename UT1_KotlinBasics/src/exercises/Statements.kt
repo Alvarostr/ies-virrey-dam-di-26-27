@@ -175,3 +175,29 @@ Concepts you must use:
 - break
 - continue
  */
+/**
+ * EXERCISE SIX
+ * Exercise: Organize a product calculator using functions
+ *
+ * Write a program that calculates the final price of a product.
+ *
+ * Product data:
+ * - Product name: "Kotlin Course"
+ * - Unit price: 99.0
+ * - Quantity: 2
+ * - Discount percentage: 10.0
+ * - Tax percentage: 7.0
+ *
+ * The program must calculate:
+ * - Subtotal
+ * - Discount amount
+ * - Price after discount
+ * - Tax amount
+ * - Final price
+ *
+ * Requirements:
+ * - Create functions without parameters to display the welcome and goodbye messages.
+ * - Create functions with input parameters to display the product information and the final summary.
+ * - Create functions with return values to calculate the different amounts.
+ * - Call everything from main.
+ */
