@@ -1,15 +1,18 @@
 fun main(){
-//    separator()
-//    showProductName()
-//    showProductName2("Kotlin Course")
-//    showProductName2(productName = "Java Course")
-//    showProductName3("Kotlin Course", 9.99)
+//separator()
+//showProductName()
+//showProductName2("Kotlin Course")
+//showProductName2(productName = "Java Course")
+//showProductName3("Kotlin Course", 9.99)
+//    showProductName4()
+//    showProductName3(price =21.99, productName = "Java Course")
 //    showProductName3(productName = "Java Course", price = 19.99)
 //    showProductName3(price = 19.99, productName = "Java Course")
-//    showProductName4(productName = "Java Course")
+//println("Price is: ${showProductTotal(10.0,3)}")
 //    println("Price is: ${showProductTotal(10.0,3)}")
-//    calculatePrice(10.0)
-//    calculatePrice(10.0, 5.0)
+//calculatePrice(10.0)
+//calculatePrice(10.0, 5.0)
+    println(separator())
 }
 
 //1.Functions in Kotlin
@@ -29,8 +32,9 @@ fun showProductName3(productName: String, price: Double){
     println("Price: $price")
 }
 
-fun showProductName4(productName: String, price: Double = 8.88){
+fun showProductName4(productName: String = "Java Course", price: Double = 8.88){
     println("Product: $productName")
+    //return
     println("Price: $price")
 }
 
