@@ -1,4 +1,4 @@
-package exercises
+package exercises.basics
 /**
 FINAL PROJECT — COMPLETE PROJECT QUOTE CALCULATOR
 

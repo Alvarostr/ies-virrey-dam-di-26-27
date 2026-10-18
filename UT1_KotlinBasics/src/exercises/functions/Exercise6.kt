@@ -1,4 +1,6 @@
-package exercises
+package exercises.functions
+
+import exercises.basics.PERCENTAGE_BASE
 
 /**
  * Exercise: Organize a product calculator using functions

@@ -1,4 +1,4 @@
-package exercises
+package exercises.basics
 /*
 Calculator: Create a calculator that takes the following parameters:
 - Product name

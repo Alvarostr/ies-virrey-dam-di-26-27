@@ -1,49 +1,53 @@
 fun main(){
-    println("1. Lambda Expressions")
-    println(upperCaseString("Hello World"))
-    //Like a lambda expression
-    val upperCaseStringLambda = {text:String -> text.uppercase()}
-    println(upperCaseStringLambda("Hello World"))
-    //Lambda without parameters
-    val lambdaWithoutParameters = {"Log message"}
-    println(lambdaWithoutParameters())
-    println("2. Using Lambdas as function parameters")
-    //Pass to another function
-    val numbers = listOf(1, -2,3,-4,5,-6)
-    //Adds lambda directly
-    val positives = numbers.filter ({x ->x>0})
-    //Lambda assing to a variable
-    val isNegative = {x: Int -> x<0}
-    val negatives = numbers.filter (isNegative )
-    println(positives)
-    println(negatives)
-    //Another example using map function
-    val doubled = numbers.map{x -> x*2}
-    val toTripled = {x:Int -> x * 3}
-    val tripled = numbers.map {toTripled}
-    println(doubled)
-    println(tripled)
-
-    //FUNCTION TYPES
-    println("3. Function Types")
-    val lowerCaseString: (String) -> String = { text -> text.lowercase()}
-    println(lowerCaseString("HELLO WORLD"))
-    //RETURN FROM A FUNCTION
-    println("4. Return from a function")
-    val timesInMinutes = listOf(2, 10,15,1)
-    val min2sec = toSeconds("minute")
-    val totalTimeInSeconds = timesInMinutes.map(min2sec).sum()
-    println(timesInMinutes.map(min2sec))
-    println("Total time is $totalTimeInSeconds")
-
-    //5. Trailing lambdas.
-    var r1 = calculateTwo(10,5,{x,y -> x + y})
-    var r2 = calculateTwo(10,5) {x,y -> x-y}
-    var r3 = calculateTwo(10,5){ x, y ->
-        println("Adding $x and $y")
-        x+y
-    }
-    println("$r1 $r2, $r3")
+//    println("1. Lambda Expressions")
+//    println(upperCaseString("Hello World"))
+////Like a lambda expression
+//val upperCaseStringLambda = {text:String -> text.uppercase()}
+//println(upperCaseStringLambda("Hello World"))
+////Lambda without parameters
+//val lambdaWithoutParameters = {"Log message"}
+//println(lambdaWithoutParameters())
+//println("2. Using Lambdas as function parameters")
+////Pass to another function
+//val numbers = listOf(1, -2,3,-4,5,-6)
+////Adds lambda directly
+//val positives = numbers.filter{x->x>0}
+//    println(positives)
+////Lambda assing to a variable
+//val isNegative = {x: Int -> x<0}
+//val negatives = numbers.filter (isNegative )
+//println(positives)
+//println(negatives)
+////Another example using map function
+//val doubled = numbers.map{x -> x*2}
+//val toTripled = {x:Int-> x * 3}
+//val tripled = numbers.map {toTripled}
+//println(doubled)
+//println(tripled)
+//
+////    //FUNCTION TYPES
+//println("3. Function Types")
+//    val lowerCaseString: (String) -> String = { text -> text.lowercase()}
+//    val numero:Int = 5
+////    println(lowerCaseString("HELLO WORLD"))
+////    //RETURN FROM A FUNCTION
+////    println("4. Return from a function")
+////    val timesInMinutes = listOf(2, 10,15,1)
+////    val min2sec = toSeconds("minute")
+////    val totalTimeInSeconds = timesInMinutes.map(min2sec).sum()
+////    println(timesInMinutes.map(min2sec))
+////    println("Total time is $totalTimeInSeconds")
+////
+////    //5. Trailing lambdas.
+////    var r1 = calculateTwo(10,5,{x,y -> x + y})
+////    var r2 = calculateTwo(10,5) {x,y -> x-y}
+////    var r3 = calculateTwo(10,5){ x, y ->
+////        println("Adding $x and $y")
+////        x+y
+////    }
+////    println("$r1 $r2, $r3")
+    calculateTwo(2,2,{a,b ->a+b})
+    println(calculateTwo(2,2,{a,b ->a+b}))
 }
 fun upperCaseString(text:String):String{
     return text.uppercase()

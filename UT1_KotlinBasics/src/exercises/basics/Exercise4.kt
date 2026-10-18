@@ -1,4 +1,4 @@
-package exercises
+package exercises.basics
 
 /**
 Month and Season:
