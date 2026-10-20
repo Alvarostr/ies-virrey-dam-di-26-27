@@ -20,7 +20,7 @@ The quote must include the following data:
 - Tax percentage.
 - Down payment percentage.
 
-The program must calculate:
+The program must theory.calculate:
 
 1. Total labor cost based on the estimated hours.
 2. Sum of all additional costs.

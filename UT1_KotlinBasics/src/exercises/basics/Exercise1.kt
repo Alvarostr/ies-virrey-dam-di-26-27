@@ -7,7 +7,7 @@ Calculator: Create a calculator that takes the following parameters:
 - Discount (%)
 - Tax (%)
 
-The program must calculate the following values.
+The program must theory.calculate the following values.
 Example: subtotal of 100, 10% discount, 10% tax.
 - Subtotal (100)
 - Discount amount (10)

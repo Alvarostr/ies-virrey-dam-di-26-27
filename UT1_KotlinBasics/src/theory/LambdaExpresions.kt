@@ -1,11 +1,13 @@
+package theory
+
 fun main(){
-//    val greeting = uppercaseString("hello world")
+//    val greeting = theory.uppercaseString("hello world")
 //    val upperCaseString2 = { text: String -> text.uppercase()}
-//    println(uppercaseString(greeting))
+//    println(theory.uppercaseString(greeting))
 //    println(upperCaseString2(greeting))
-//    println(double(5))
-//    val double = {number: Int -> number * 2}
-//    println(double(4))
+//    println(theory.double(5))
+//    val theory.double = {number: Int -> number * 2}
+//    println(theory.double(4))
 
 //    //1. LAMBDAS.
 //    //A lambda can have any parameters
@@ -45,7 +47,7 @@ fun main(){
 //    val add2 = {a:Int, b:Int -> a+b}
 //
 //    //3. The implicit parameter it
-//    val double: (Int) -> Int = {number -> number *2}
+//    val theory.double: (Int) -> Int = {number -> number *2}
 //    val doubleShort: (Int) -> Int = {it * 2}  //same lambda that previous
 //
 //    repeat(2){

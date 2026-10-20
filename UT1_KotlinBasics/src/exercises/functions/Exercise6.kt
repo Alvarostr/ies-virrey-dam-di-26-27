@@ -14,7 +14,7 @@ import exercises.basics.PERCENTAGE_BASE
  * - Discount percentage: 10.0
  * - Tax percentage: 7.0
  *
- * The program must calculate:
+ * The program must theory.calculate:
  * - Subtotal
  * - Discount amount
  * - Price after discount
@@ -24,8 +24,8 @@ import exercises.basics.PERCENTAGE_BASE
  * Requirements:
  * - Create functions without parameters to display the welcome and goodbye messages.
  * - Create functions with input parameters to display the product information and the final summary.
- * - Create functions with return values to calculate the different amounts.
- * - Call everything from main.
+ * - Create functions with return values to theory.calculate the different amounts.
+ * - Call everything from theory.main.
  */
 
 fun main() {

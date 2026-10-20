@@ -1,3 +1,5 @@
+package theory
+
 fun main(){
 //    println("Class number 1")
 //    println("Class number 2")

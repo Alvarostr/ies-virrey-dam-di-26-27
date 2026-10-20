@@ -1,3 +1,7 @@
+package theory
+
+import kotlin.collections.iterator
+
 fun main(){
     //7.Lists
 //    val courses = listOf("Kotlin", "Java", "Phyton", "Kotlin")

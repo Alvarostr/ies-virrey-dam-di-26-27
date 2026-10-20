@@ -1,3 +1,5 @@
+package theory
+
 fun main(){
     val name:String = "Teacher"
     val age:Int = 49

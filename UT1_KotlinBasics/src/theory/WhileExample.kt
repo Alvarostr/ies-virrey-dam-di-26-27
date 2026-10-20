@@ -1,3 +1,5 @@
+package theory
+
 fun main(){
 
     for (attempt in 1..3){

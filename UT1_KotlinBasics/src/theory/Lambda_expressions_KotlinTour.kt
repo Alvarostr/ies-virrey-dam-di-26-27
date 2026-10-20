@@ -1,6 +1,8 @@
+package theory
+
 fun main(){
 //    println("1. Lambda Expressions")
-//    println(upperCaseString("Hello World"))
+//    println(theory.upperCaseString("Hello World"))
 ////Like a lambda expression
 //val upperCaseStringLambda = {text:String -> text.uppercase()}
 //println(upperCaseStringLambda("Hello World"))
@@ -33,15 +35,15 @@ fun main(){
 ////    //RETURN FROM A FUNCTION
 ////    println("4. Return from a function")
 ////    val timesInMinutes = listOf(2, 10,15,1)
-////    val min2sec = toSeconds("minute")
+////    val min2sec = theory.toSeconds("minute")
 ////    val totalTimeInSeconds = timesInMinutes.map(min2sec).sum()
 ////    println(timesInMinutes.map(min2sec))
 ////    println("Total time is $totalTimeInSeconds")
 ////
 ////    //5. Trailing lambdas.
-////    var r1 = calculateTwo(10,5,{x,y -> x + y})
-////    var r2 = calculateTwo(10,5) {x,y -> x-y}
-////    var r3 = calculateTwo(10,5){ x, y ->
+////    var r1 = theory.calculateTwo(10,5,{x,y -> x + y})
+////    var r2 = theory.calculateTwo(10,5) {x,y -> x-y}
+////    var r3 = theory.calculateTwo(10,5){ x, y ->
 ////        println("Adding $x and $y")
 ////        x+y
 ////    }

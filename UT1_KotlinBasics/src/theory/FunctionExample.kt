@@ -1,17 +1,19 @@
+package theory
+
 fun main(){
-//separator()
-//showProductName()
-//showProductName2("Kotlin Course")
-//showProductName2(productName = "Java Course")
-//showProductName3("Kotlin Course", 9.99)
-//    showProductName4()
-//    showProductName3(price =21.99, productName = "Java Course")
-//    showProductName3(productName = "Java Course", price = 19.99)
-//    showProductName3(price = 19.99, productName = "Java Course")
-//println("Price is: ${showProductTotal(10.0,3)}")
-//    println("Price is: ${showProductTotal(10.0,3)}")
-//calculatePrice(10.0)
-//calculatePrice(10.0, 5.0)
+//theory.separator()
+//theory.showProductName()
+//theory.showProductName2("Kotlin Course")
+//theory.showProductName2(productName = "Java Course")
+//theory.showProductName3("Kotlin Course", 9.99)
+//    theory.showProductName4()
+//    theory.showProductName3(price =21.99, productName = "Java Course")
+//    theory.showProductName3(productName = "Java Course", price = 19.99)
+//    theory.showProductName3(price = 19.99, productName = "Java Course")
+//println("Price is: ${theory.showProductTotal(10.0,3)}")
+//    println("Price is: ${theory.showProductTotal(10.0,3)}")
+//theory.calculatePrice(10.0)
+//theory.calculatePrice(10.0, 5.0)
     println(separator())
 }
 

@@ -1,3 +1,5 @@
+package theory
+
 fun main(){
     //println, comments and types
     println("Teacher")

@@ -1,3 +1,5 @@
+package theory
+
 fun main(){
     //Conditionals in Kotlin: if, else if and else
     val age = 17
