@@ -15,6 +15,7 @@ fun main(){
 
     //8.Mutable list: MutableList
 //    val cart = mutableListOf("Keyboard, Mouse")
+//    println(cart)
 //    cart.add("Monitor")
 //    cart.add(0,"Laptop")
 //    println(cart)
@@ -30,7 +31,8 @@ fun main(){
     //9.Traversing lists.
 //    val courses = listOf("Kotlin", "Java", "Phyton")
 //    for (course in courses){
-//        println("-$course")
+//        println("-${courses.indexOf(course)+1}. $course")
+//
 //    }
 //    for((index,course) in courses.withIndex()){
 //        println("-${index +1}. $course ")
@@ -46,25 +48,25 @@ fun main(){
 //    val firstExpensive = prices.find{it>40}
 //    val overThousand = prices.find {it>1000}
 //    val howManyCheap = prices.count{it<20}
-//
+////
 //    println("$cheap $firstExpensive $overThousand $howManyCheap")
     //10.1 find and null safety
 //    val courses = listOf("Kotlin", "Java", "Python")
 //    val result = courses.find { it.startsWith("S") }
-//    println(result ?: "No course starts with S")
+//    println(result  ?:"No course starts with S")
 //
-//    val length = courses.find { it.startsWith("J") }?.length ?: 0
+//    val length = courses.find { it.startsWith("S") }?.length?: 0
 //    println(length)
     //10.2 Chaining Operations.
 //    val prices = listOf(12.5, 99.0, 5.0, 45.0, 20.0)
-//
+//    println(prices.sum())
 //    val total = prices
-//        .filter{it >= 10}
-//        .map{it * 0.9}
+//        .filter { it >= 10 }
+//        .map { it * 0.9 }
 //        .sum()
 //
 //    println("Total: ${"%.2f".format(total)}")
-    //11. Sets.
+//    //11. Sets.
 //    val tags = setOf("kotlin", "android", "kotlin", "compose")
 //    println(tags)
 //    println(tags.size)

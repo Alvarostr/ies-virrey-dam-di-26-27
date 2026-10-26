@@ -3,9 +3,10 @@ package theory
 fun main(){
     //3. First way to chek if it is null
     val firstSurname: String? = "Alumbreros"
+
     if(firstSurname != null)
     {
-        println("Length: $firstSurname")
+        println("Length: ${firstSurname.length}")
     }else{
         println("No second surname")
     }
@@ -21,15 +22,15 @@ fun main(){
     val surnameToShow = secondSurname ?: "(none)"
     println(surnameToShow)
 
-    val length = secondSurname?.length ?:0
+    val length = secondSurname?.length?:0
     println(length)
 
     secondSurname?.let {println("Second Surname: $it")}
 
     //5.1 Safe keyboard input
     println("How many units?")
-    val quantity = readln().toIntOrNull() ?: 1
-    println("You ordered $quantity units")
+    //val quantity = readln().toIntOrNull() ?: 1
+    //println("You ordered $quantity units")
 
 
     //5.2Elvis with return
@@ -37,8 +38,8 @@ fun main(){
     printDiscountedPrice("hello")
 
     //6. The not-null assertion !!
-    val thirdSurname: String? = "Third"
-    println(secondSurname!!.length)
+    val thirdSurname: String? = null
+    println(thirdSurname?.length?:0)
 }
 fun printDiscountedPrice(priceText: String){
     val price = priceText.toDoubleOrNull() ?: return
