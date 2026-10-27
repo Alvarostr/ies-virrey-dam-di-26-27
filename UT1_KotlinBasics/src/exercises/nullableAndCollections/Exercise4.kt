@@ -14,7 +14,7 @@ const val MAX_MARK = 10.0
 const val EXTRA_POINT = 1.0
 
 fun main() {
-    val marks = listOf(7.5, 4.0, 9.0, 5.5, 3.0, 8.0, 6.5)
+    val marks = listOf(7.5, 4.0, 9.5, 5.5, 3.0, 8.0, 6.5)
 
     // average() returns a Double. format gives two decimals.
     println("Average: ${"%.2f".format(marks.average())}")              // 6,21 or 6.21
