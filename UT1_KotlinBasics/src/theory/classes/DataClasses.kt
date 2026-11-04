@@ -1,7 +1,17 @@
 package theory.classes
 
+import jdk.jfr.Percentage
+
 data class Product(val name:String, val price:Double, val stock: Int = 0)
 
+//13.Extensions functions
+fun Double.toEurosTwo(): String = "%.2f €".format(this)
+
+fun Product.withDiscount(percentage: Double): Product =
+    copy(price = price - price * percentage / 100)
+
+val Product.isCheap: Boolean
+    get() = price <20.0
 fun main(){
     //10. Data classes
     val keyboard = Product("Keyboard",25.0,10)
