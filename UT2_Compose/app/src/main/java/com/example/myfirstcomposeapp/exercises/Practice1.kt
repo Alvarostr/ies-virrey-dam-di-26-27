@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
@@ -56,20 +57,16 @@ fun InfoTag(text: String, backgroundColor: Color, modifier: Modifier = Modifier)
 @Preview(name = "Short text", showBackground = true)
 @Composable
 fun InfoTagShortPreview() {
-    MyFirstComposeAppTheme {
         InfoTag(text = "New", backgroundColor = Color(0xFF1565C0))
-    }
 }
 
 @Preview(name = "Long text", showBackground = true)
 @Composable
 fun InfoTagLongPreview() {
-    MyFirstComposeAppTheme {
         InfoTag(
             text = "A much longer text to see how the tag grows with its content",
             backgroundColor = Color(0xFF1565C0)
         )
-    }
 }
 
 @Preview(name = "Other colour", showBackground = true)
@@ -113,7 +110,7 @@ fun Practice1Screen(modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true, showSystemUi = true, device = Devices.TV_1080p)
 @Composable
 fun Practice1ScreenPreview() {
     MyFirstComposeAppTheme {

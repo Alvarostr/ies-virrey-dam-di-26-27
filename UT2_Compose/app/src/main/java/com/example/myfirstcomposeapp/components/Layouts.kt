@@ -53,7 +53,7 @@ fun MyBox(modifier: Modifier = Modifier){
         Text("Centre")
         Box(Modifier.size(120.dp).background(Color.LightGray)){
             Text("Top Start")
-            Text("Bottom End", Modifier.align(Alignment.BottomEnd))
+            Text("Bottom End", Modifier.align(Alignment.BottomStart))
         }
     }
 
@@ -71,10 +71,9 @@ fun MySpace(modifier: Modifier = Modifier){
 @Composable
 fun MyWeight(modifier: Modifier = Modifier){
     Row(modifier = Modifier.fillMaxWidth()){
-        Box(Modifier.weight(1f).height(60.dp).background(Color.Red))
+        Box(Modifier.weight(2f).height(60.dp).background(Color.Red))
         Box(Modifier.weight(1f).height(60.dp).background(Color.Green))
-        Box(Modifier.weight(1f).height(60.dp).background(Color.Blue))
-
+        Box(Modifier.weight(2f).height(60.dp).background(Color.Blue))
     }
 }
 
@@ -99,8 +98,8 @@ fun MyWeight(modifier: Modifier = Modifier){
 //fun PreviewSpace(){
 //    MySpace()
 //}
-//@Preview (name = "5 Space", showBackground = true)
-//@Composable
-//fun PreviewWeight(){
-//    MyWeight()
-//}
+@Preview (name = "5 Space", showBackground = true)
+@Composable
+fun PreviewWeight(){
+    MyWeight()
+}

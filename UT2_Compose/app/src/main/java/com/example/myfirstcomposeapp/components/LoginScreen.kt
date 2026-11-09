@@ -19,7 +19,7 @@ fun MyFirstComposableFun(){
     Text(
         text = "Hello Compose",
         color = Color.DarkGray,
-        fontSize = 24.sp,
+        fontSize = 12.sp,
         fontWeight = FontWeight.Bold,
         textAlign = TextAlign.Center
     )
