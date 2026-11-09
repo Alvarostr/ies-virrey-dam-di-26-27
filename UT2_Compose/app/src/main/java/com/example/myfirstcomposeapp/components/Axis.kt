@@ -45,21 +45,21 @@ fun ColumnLab(arrangement: Arrangement.Vertical, alignment: Alignment.Horizontal
 @Composable
 fun ColumnLab1() = ColumnLab(Arrangement.Top, Alignment.Start)
 
-//@Preview(name = "2 Only Arrangement", showBackground = true)
-//@Composable
-//fun ColumnLab2() = ColumnLab(Arrangement.Center, Alignment.Start)
+@Preview(name = "2 Only Arrangement", showBackground = true)
+@Composable
+fun ColumnLab2() = ColumnLab(Arrangement.Center, Alignment.Start)
 
-//@Preview(name = "3 Only Alignment", showBackground = true)
-//@Composable
-//fun ColumnLab3() = ColumnLab(Arrangement.Top, Alignment.CenterHorizontally)
+@Preview(name = "3 Only Alignment", showBackground = true)
+@Composable
+fun ColumnLab3() = ColumnLab(Arrangement.Top, Alignment.CenterHorizontally)
 
-//@Preview(name = "4 Both", showBackground = true)
-//@Composable
-//fun ColumnLab4() = ColumnLab(Arrangement.SpaceBetween, Alignment.End)
+@Preview(name = "4 Both", showBackground = true)
+@Composable
+fun ColumnLab4() = ColumnLab(Arrangement.SpaceBetween, Alignment.End)
 
-//@Preview(name = "5 spacedBy", showBackground = true)
-//@Composable
-//fun ColumnLab5() = ColumnLab(Arrangement.spacedBy(20.dp), Alignment.CenterHorizontally)
+@Preview(name = "5 spacedBy", showBackground = true)
+@Composable
+fun ColumnLab5() = ColumnLab(Arrangement.spacedBy(20.dp), Alignment.CenterHorizontally)
 
 @Composable
 fun RowLab(arrangement: Arrangement.Horizontal, alignment: Alignment.Vertical) {
@@ -74,10 +74,10 @@ fun RowLab(arrangement: Arrangement.Horizontal, alignment: Alignment.Vertical) {
     }
 }
 
-//@Preview(name = "6 Row by default", showBackground = true)
-//@Composable
-//fun RowLab1() = RowLab(Arrangement.Start, Alignment.Top)
+@Preview(name = "6 Row by default", showBackground = true)
+@Composable
+fun RowLab1() = RowLab(Arrangement.Start, Alignment.Top)
 
-//@Preview(name = "7 Row: Arrangement + Alignment", showBackground = true)
-//@Composable
-//fun RowLab2() = RowLab(Arrangement.SpaceEvenly, Alignment.CenterVertically)
+@Preview(name = "7 Row: Arrangement + Alignment", showBackground = true)
+@Composable
+fun RowLab2() = RowLab(Arrangement.SpaceEvenly, Alignment.CenterVertically)
