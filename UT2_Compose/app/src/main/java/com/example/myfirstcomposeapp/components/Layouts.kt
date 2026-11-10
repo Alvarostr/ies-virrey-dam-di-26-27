@@ -85,7 +85,7 @@ fun MySpacer(modifier: Modifier = Modifier){
         Text("Title")
         Spacer(modifier = Modifier.height(24.dp))
         Text("First paragraph")
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(24.dp))
         Text("Second paragraph")
     }
     Row(modifier = Modifier.fillMaxWidth()) {
@@ -173,8 +173,8 @@ fun MySpacer(modifier: Modifier = Modifier){
 //fun PreviewSpacer(){
 //    MySpacer()
 //}
-//@Preview (name = "6 Combining Layouts",  showBackground = true)
-//@Composable
-//fun PreviewColuorAreas(){
-//    ColourAreas()
-//}
+@Preview (name = "6 Combining Layouts",  showBackground = true)
+@Composable
+fun PreviewColuorAreas(){
+    ColourAreas()
+}

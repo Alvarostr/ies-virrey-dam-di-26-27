@@ -48,6 +48,6 @@ fun Exercise22WeightsPreview() = Exercise22Weights()
 @Composable
 fun Exercise22FixedWidePreview() = Exercise22Fixed()
 
-@Preview(name = "4 Width fixed, narrow width", showBackground = true, widthDp = 250)
+@Preview(name = "4 Width fixed, narrow width", showBackground = true, )
 @Composable
 fun Exercise22FixedNarrowPreview() = Exercise22Fixed()
