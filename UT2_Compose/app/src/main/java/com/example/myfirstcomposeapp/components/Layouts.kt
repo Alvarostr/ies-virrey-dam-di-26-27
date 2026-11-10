@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -77,6 +79,69 @@ fun MyWeight(modifier: Modifier = Modifier){
     }
 }
 
+@Composable
+fun MySpacer(modifier: Modifier = Modifier){
+    Column{
+        Text("Title")
+        Spacer(modifier = Modifier.height(24.dp))
+        Text("First paragraph")
+        Spacer(modifier = Modifier.height(8.dp))
+        Text("Second paragraph")
+    }
+    Row(modifier = Modifier.fillMaxWidth()) {
+        Text("Title")
+        Spacer(modifier = Modifier.weight(1f))
+        Text("Edit")
+    }
+
+}
+
+@Composable fun ColourAreas(modifier: Modifier = Modifier) {
+    Column(modifier = modifier.fillMaxSize()) {
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .background(Color.Red),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("RED")
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.Blue)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth().height(40.dp)) {
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxHeight()
+                        .background(Color.Gray),
+                    contentAlignment = Alignment.Center
+                ) { Text("GREY") }
+            }
+        }
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxHeight()
+                .background(Color.White),
+            contentAlignment = Alignment.Center
+        ) { Text("WHITE") }
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .background(Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) { Text("YELLOW") }
+    }
+}
+
+
+
 
 //@Preview(name = "1 Column", showBackground = true)
 //@Composable
@@ -98,8 +163,18 @@ fun MyWeight(modifier: Modifier = Modifier){
 //fun PreviewSpace(){
 //    MySpace()
 //}
-@Preview (name = "5 Space", showBackground = true)
-@Composable
-fun PreviewWeight(){
-    MyWeight()
-}
+//@Preview (name = "5 Space", showBackground = true)
+//@Composable
+//fun PreviewWeight(){
+//    MyWeight()
+//}
+//@Preview(name = "6 Spacer", showBackground = true)
+//@Composable
+//fun PreviewSpacer(){
+//    MySpacer()
+//}
+//@Preview (name = "6 Combining Layouts",  showBackground = true)
+//@Composable
+//fun PreviewColuorAreas(){
+//    ColourAreas()
+//}
