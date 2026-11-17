@@ -26,6 +26,10 @@
 - **26/10/2026**: Module 5: Classes and Objects
 - **27/10/2026**: Module 5: Classes and Objects
 - **04/11/2026**: Ending Module 5
+- **09/11/2006**: Block 1 Compose.
+- **10/11/2026**: Block 2 Compose.
+- **11/11/2026**: Warmup Exercises B1 and B2 Compose. 
+- **17/11/2026**: Review Warmup exercises / Block 3.
 
 ## 💻 How to open the repository in IntelliJ IDEA
 1. Fork this repository and clone **your fork** (`File → New → Project from Version Control…`).
