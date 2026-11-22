@@ -1,4 +1,4 @@
-package com.example.myfirstcomposeapp.components
+package com.example.myfirstcomposeapp.components.b1
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxWidth

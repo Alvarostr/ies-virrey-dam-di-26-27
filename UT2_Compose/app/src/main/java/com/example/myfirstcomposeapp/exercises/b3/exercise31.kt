@@ -35,7 +35,7 @@ fun Exercise31(modifier: Modifier = Modifier){
             text = paragraph,
             style = MaterialTheme.typography.bodyMedium,
             maxLines = 2,
-            overflow = TextOverflow.Ellipsis
+            overflow = TextOverflow.StartEllipsis
         )
     }
 }

@@ -1,4 +1,4 @@
-package com.example.myfirstcomposeapp.exercises
+package com.example.myfirstcomposeapp.exercises.b2
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background

@@ -1,4 +1,4 @@
-package com.example.myfirstcomposeapp.components
+package com.example.myfirstcomposeapp.components.b2
 
 
 import androidx.compose.foundation.background
@@ -18,7 +18,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 private val CardShape = RoundedCornerShape(16.dp)
 private val CardFill = Color(0xFFE3F2FD)
