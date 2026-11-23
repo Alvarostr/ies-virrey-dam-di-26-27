@@ -8,19 +8,28 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
+fun BrokenCounterB(modifier: Modifier = Modifier){
+    var count = 0
+    Button(onClick = {count++}) {
+        Text("Clicks: $count")
+    }
+}
+@Composable
 fun BrokenCounter(modifier: Modifier = Modifier){
-    var count = remember{mutableStateOf(0)  }
-    Button(onClick = {count.value++}){
-        Text("Clicks: ${count.value}")
+    var count by remember{mutableStateOf(0)  }
+    Button(onClick = {count++}){
+        Text("Clicks: $count")
     }
 }
 
@@ -48,10 +57,15 @@ fun BrokenCounterTwo(modifier: Modifier = Modifier){
         Text("Clicks: ${count.value}")
     }
 }
+@Preview
+@Composable
+fun MyPreviewBrokenCounterB(){
+    //BrokenCounterB()
+}
 @Preview(name = "preview 1")
 @Composable
 fun MyPreviewMyState(){
-    BrokenCounter()
+    //BrokenCounter()
 }
 @Preview(name = "preview 2")
 @Composable
