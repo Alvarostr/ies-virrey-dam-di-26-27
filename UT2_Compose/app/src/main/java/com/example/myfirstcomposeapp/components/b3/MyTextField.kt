@@ -25,6 +25,16 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
+fun NameField(modifier: Modifier = Modifier){
+    var name by rememberSaveable{mutableStateOf("") }
+    TextField(
+        value = name,
+        onValueChange = {name = it},
+        label = { Text("Name")},
+        modifier = modifier.fillMaxWidth()
+    )
+}
+@Composable
 fun MyTextField(modifier: Modifier = Modifier){
     var name by rememberSaveable{ mutableStateOf("") }
     var surname by rememberSaveable{mutableStateOf("") }
@@ -96,9 +106,12 @@ fun MailAndPassword(modifier: Modifier = Modifier){
 
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun MyPreviewMyTextField(){
+
+    //NameField()
+    //MyTextField()
     MailAndPassword()
 }
 

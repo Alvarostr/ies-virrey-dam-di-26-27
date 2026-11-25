@@ -65,7 +65,7 @@ fun Exercise33(
 
 @Preview
 @Composable
-fun MyPreviewExercise33(){
+fun MyPreviewExercise36(){
     //Exercise33(9,{},{},{})
     ParentExercise33()
 }
