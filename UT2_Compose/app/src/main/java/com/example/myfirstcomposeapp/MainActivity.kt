@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myfirstcomposeapp.components.b3.BrokenCounter
 import com.example.myfirstcomposeapp.components.b3.BrokenCounterTwo
 import com.example.myfirstcomposeapp.components.b3.MailAndPassword
+import com.example.myfirstcomposeapp.exercises.b3.Exercise32
 import com.example.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    BrokenCounterTwo(modifier = Modifier.padding(innerPadding))
+                    Exercise32(modifier = Modifier.padding(innerPadding))
                 }
             }
         }

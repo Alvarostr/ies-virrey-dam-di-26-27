@@ -23,7 +23,7 @@ fun CounterScreen(modifier: Modifier = Modifier){
     var count by rememberSaveable{ mutableStateOf(0) }
     CounterContent(
         count = count,
-        onIncrement = {count++},
+        onIncrement = {count--},
         onReset = {count = 0},
         modifier = modifier
     )
@@ -54,6 +54,12 @@ fun CounterContent(
 @Preview(showBackground = true)
 @Composable
 fun MyPreviewCounterScreen(){
-    CounterScreen()
-    //CounterContent(0, onIncrement = {}, onReset = {})
+    //CounterScreen()
+    CounterContent(10, onIncrement = {}, onReset = {})
+}
+@Preview(showBackground = true)
+@Composable
+fun MyPreviewCounterScreen2(){
+    //CounterScreen()
+    CounterContent(0, onIncrement = {}, onReset = {})
 }

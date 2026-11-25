@@ -19,8 +19,28 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun Exercise33(modifier: Modifier = Modifier){
+fun ParentExercise33(modifier: Modifier = Modifier){
     var contador by remember { mutableStateOf(0) }
+    Exercise33(
+        contador,
+        onOperation1 = {contador++},
+        onOperation2 = {contador = 0},
+        onOperation3 = {contador--},
+        textButton1 = "+1",
+        textButton2 = "Reset",
+        textButton3 = "-1"
+        )
+}
+@Composable
+fun Exercise33(
+    contador: Int,
+    onOperation1: () -> Unit,
+    onOperation2: () -> Unit,
+    onOperation3: ()-> Unit,
+    textButton1:String,
+    textButton2:String,
+    textButton3:String,
+    modifier: Modifier = Modifier){
     Column(modifier = Modifier
         .fillMaxWidth(),
         verticalArrangement = Arrangement.Center,
@@ -29,14 +49,14 @@ fun Exercise33(modifier: Modifier = Modifier){
         Row(modifier = Modifier
             .fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly){
-            Button(onClick = {contador--}, enabled = contador>0) {
-                Text("-1")
+            Button(onClick = onOperation1, ) {
+                Text(textButton1)
             }
-            Button(onClick = {contador++}) {
-                Text("+1")
+            Button(onClick = onOperation2, enabled = contador>0) {
+                Text(textButton2)
             }
-            Button(onClick = {contador = 0}, enabled = contador>0) {
-                Text("Reset")
+            Button(onClick = onOperation3, enabled = contador>0) {
+                Text(textButton3)
             }
 
         }
@@ -46,5 +66,6 @@ fun Exercise33(modifier: Modifier = Modifier){
 @Preview
 @Composable
 fun MyPreviewExercise33(){
-    Exercise33()
+    //Exercise33(9,{},{},{})
+    ParentExercise33()
 }

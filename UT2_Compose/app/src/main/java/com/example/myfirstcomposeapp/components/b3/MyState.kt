@@ -52,15 +52,15 @@ fun MyRememberSaveable(modifier: Modifier = Modifier){
 
 @Composable
 fun BrokenCounterTwo(modifier: Modifier = Modifier){
-    var count = rememberSaveable{mutableStateOf(0)  }
-    Button(onClick = {count.value++}){
-        Text("Clicks: ${count.value}")
+    var count by rememberSaveable{mutableStateOf(0)  }
+    Button(onClick = {count++}){
+        Text("Clicks: ${count}")
     }
 }
 @Preview
 @Composable
 fun MyPreviewBrokenCounterB(){
-    //BrokenCounterB()
+    BrokenCounterB()
 }
 @Preview(name = "preview 1")
 @Composable
@@ -70,5 +70,5 @@ fun MyPreviewMyState(){
 @Preview(name = "preview 2")
 @Composable
 fun MyPreviewMyRememberSaveable(){
-    MyRememberSaveable()
+    //MyRememberSaveable()
 }

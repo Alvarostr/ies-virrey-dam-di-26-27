@@ -62,3 +62,9 @@ fun MyPreview(){
 
     }
 }
+
+@Preview
+@Composable
+fun MyPreviewExercise32(){
+    Exercise32()
+}
