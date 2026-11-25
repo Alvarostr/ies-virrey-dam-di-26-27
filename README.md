@@ -30,6 +30,7 @@
 - **10/11/2026**: Block 2 Compose.
 - **11/11/2026**: Warmup Exercises B1 and B2 Compose. 
 - **17/11/2026**: Review Warmup exercises / Block 3.
+- **25/11/2026**: Block 3 finished. Exercises State Hoisting. 
 
 ## 💻 How to open the repository in IntelliJ IDEA
 1. Fork this repository and clone **your fork** (`File → New → Project from Version Control…`).
